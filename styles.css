@@ -12,7 +12,7 @@ header {
 
 
 .nav-container img {
-    height: 40px;
+    height: 36px;
 }
 
 .newlaunch-container {
@@ -47,14 +47,30 @@ header {
 }
 
 .newlaunch-container button {
-    background-color: transparent;
-    border-radius: 20px;
-    border-image: linear-gradient(50deg, #ff497a, #ff6941, #cfb473) 10;
-    border-width: 4px;
-    border-style: solid;
-    padding: 20px 36px;
-    font-weight: 600;
+    --border-width: 4px;
+    --border-radius: 30px;
+    border-radius: var(--border-radius);
+    background: linear-gradient(50deg, #ff497a, #ff6941, #d3d891);
+    font: inherit;
+    border: 0;
+    padding: 1.5rem 3.5rem;
     font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+}
+
+.newlaunch-container button::before {
+    content: '';
+    display: block;
+    height: calc(100% - calc(var(--border-width) * 2));
+    width: calc(100% - calc(var(--border-width) * 2));
+    background: white;
+    position: absolute;
+    top: var(--border-width);
+    left: var(--border-width);
+    border-radius: var(--border-radius);
+    z-index: -1;
 }
 
 .newlaunch-container button:hover {

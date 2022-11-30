@@ -28,7 +28,7 @@ header {
 }
 
 .nav-container img {
-    height: 36px;
+    height: 50px;
 }
 
 .nav-list {
@@ -384,6 +384,9 @@ footer {
         padding-bottom: 60px;
         width: 100vw;
     }
+    .nav-container img {
+        height: 60px;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -479,7 +482,7 @@ footer {
         height: 700px;
     }
     .freenft-container {
-        width: 94%;
+        width: 97%;
     }
     .auction-container {
         width: 93%;

@@ -159,6 +159,7 @@ header {
 .freenft-container {
     background-image: url('img/background.svg');
     background-size: cover;
+    background-position: 10%;
     padding: 120px 0 30px 0;
 }
 
@@ -507,8 +508,170 @@ footer {
         height: 500px;
         left: 50%;
     }
+    .signup-button {
+        --border-width: 6px;
+        --border-radius: 70px;
+        padding: 2rem 4rem;
+        font-size: 26px;
+    }
+    
 }
 
 @media only screen and (min-width: 2000px) {
+    header {
+        padding: 70px 0;
+    }
+    .newlaunch-container {
+        height: 55vh;
+    }
+    .launch-span {
+        font-size: 24px;
+        margin-bottom: 50px;
+    }
+    .newlaunch-container .launch-heading {
+        font-size: 140px;
+        max-width: 800px;
+        margin-bottom: 60px;
+    }
+    .newlaunch-container p {
+        font-size: 30px;
+        max-width: 790px;
+        line-height: 44px;
+    }
+    .signup-button {
+        --border-width: 6px;
+        --border-radius: 70px;
+        padding: 2.2rem 4.5rem;
+        font-size: 30px;
+    }
+    .pink-nft {
+        height: 900px;
+    }
+    .nav-container li a {
+        font-size: 26px;
+    }
+    .nav-list {
+        gap: 30px;
+    }
+    .freenft-container {
+        padding: 200px 0 100px 60px;
+        margin-bottom: 160px;
+        width: 91%;
+    }
+    .freenft-container div {
+        font-size: 60px;
+        margin-bottom: 50px;
+    }
+    .freenft-container p {
+        font-size: 30px;
+    }
+    .companies img {
+        height: 62px;
+    }
+    .companies {
+        margin: 0 70px 140px 70px;
+        justify-content: space-between;
+    }
+    .auction-container .auction-name {
+        font-size: 60px;
+        max-width: 600px;
+        margin-bottom: 60px;
+    }
+    .auction-container p {
+        font-size: 30px;
+        max-width: 1100px;
+    }
+    .card-container {
+        min-width: 400px;
+    }
+    .card-info {
+        padding: 30px 30px;
+        border-radius: 0 0 24px 24px;
+    }
+    .nft-series span:nth-of-type(1) {
+        font-size: 18px;
+    }
     
+    .nft-series span:nth-of-type(2),
+    .price {
+        font-size: 26px;
+    }
+    
+    .bid>span:nth-of-type(1) {
+        font-size: 18px;
+    }
+    
+    .nft-series span:nth-of-type(3),
+    .bid span:nth-of-type(2) {
+        font-size: 24px;
+    }
+    .nft-series, .bid {
+        gap: 20px;
+    }
+    .launch-container {
+        margin: 160px 0 160px 70px;
+    }
+    .launch-info .launch-heading {
+        font-size: 86px;
+        max-width: 800px;
+        margin-bottom: 50px;
+    }
+    .launch-info p {
+        font-size: 30px;
+        max-width: 720px;
+        margin-bottom: 70px;
+    }
+    footer {
+        padding: 90px 0 80px 0;
+        margin: 0 70px;
+    }
+    .info-wrapper {
+        margin-bottom: 60px;
+    }
+    .menu-wrapper {
+        width: 60%;
+    }
+    .social-wrapper {
+        width: 40%;
+    }
+    .social-wrapper {
+        gap: 45px;
+    }
+    .social-wrapper .logo {
+        width: 300px;
+    }
+    .social-wrapper p {
+        font-size: 32px;
+    }
+    .media-container img {
+        width: 36px;
+    }
+    .media-container {
+        gap: 12px;
+    }
+    .menu-heading {
+        font-size: 26px;
+    }
+    .menu-wrapper a {
+        font-size: 28px;
+    }
+    .copyright-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .launching-date {
+        display: inline;
+        font-size: 30px;
+        color: rgb(153, 153, 153);
+    }
+    .copyright {
+        font-size: 30px;
+    }
+    .upsell-img {
+        height: 700px;
+    }
+    .divider {
+        width: 92%;
+        margin: 0 auto;
+    }
 }

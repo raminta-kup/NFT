@@ -1,7 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
-    /* width: 100vw; */
+    width: 100vw;
 }
 
 header {
@@ -11,14 +11,46 @@ header {
     padding: 20px 0;
 }
 
-
+.nav-container {
+    display: flex;
+    align-items: center;
+}
 .nav-container img {
     height: 36px;
 }
+.nav-list {
+    display: flex;
+    gap: 20px;
+    display: none;
+}
+.nav-list a {
+    text-decoration: none;
+    color: rgb(96,96,96);
+    font-size: 18px;
+}
+
+.nav-list li:last-child a {
+    color: rgb(255, 57, 152);
+}
 
 .newlaunch-container {
-    margin: 40px 110px 60px 26px;
-    position: relative;
+    margin: 40px 0 60px 26px;
+    width: 100vw;
+    display: flex;
+}
+.launch-container {
+    width: 100vw;
+    display: flex;
+    margin: 40px 0 50px 26px;
+}
+.upsell-img {
+    height: 400px;
+    position: absolute;
+    bottom: -20%;
+}
+
+.newlaunch-info {
+    width: 55%;
 }
 
 .launch-span {
@@ -30,16 +62,18 @@ header {
     display: block;
 }
 
-.launch-header {
+.launch-heading {
     font-weight: 800;
     font-size: 48px;
 }
 
-.newlaunch-container div:nth-of-type(2) {
+.newlaunch-container div:nth-of-type(2), 
+.launch-container div:nth-of-type(2) {
     margin-bottom: 30px;
 }
 
-.newlaunch-container p {
+.newlaunch-container p,
+.launch-container p {
     color: rgb(85, 85, 85);
     line-height: 30px;
     font-size: 20px;
@@ -47,7 +81,7 @@ header {
     max-width: 300px;
 }
 
-.newlaunch-container button {
+.signup-button {
     --border-width: 4px;
     --border-radius: 30px;
     border-radius: var(--border-radius);
@@ -61,7 +95,7 @@ header {
     z-index: 1;
 }
 
-.newlaunch-container button::before {
+.signup-button::before {
     content: '';
     display: block;
     height: calc(100% - calc(var(--border-width) * 2));
@@ -74,15 +108,22 @@ header {
     z-index: -1;
 }
 
-.newlaunch-container button:hover {
+.signup-button:hover {
     cursor: pointer;
+}
+
+.img-container,
+.img-container2 {
+    width: 35%;
+    position: relative;
 }
 
 .pink-nft {
     position: absolute;
-    height: 300px;
-    top: -50px;
-    left: 180px;
+    height: 400px;
+    left: -76%;
+    top: -24%;
+    /* left: 100%; */
 }
 
 .freenft-container {
@@ -138,9 +179,10 @@ header {
 }
 
 .auction-container a {
-    color: rgb(96, 96, 96);
-    border-bottom: 1.5px solid rgb(96, 96, 96);
+    color: rgb(85,85,85);
+    border-bottom: 1.5px solid rgb(85,85,85);
     text-decoration: none;
+    font-weight: 500;
 }
 
 .card-wrapper {
@@ -148,6 +190,7 @@ header {
     justify-content: space-between;
     gap: 24px;
     margin-bottom: 100px;
+    overflow: hidden;
 }
 
 .card-container {
@@ -209,7 +252,7 @@ header {
     width: 100%;
     height: 2px;
     background-color: rgb(238,238,238);
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 footer {
@@ -219,14 +262,18 @@ footer {
 .social-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 28px;
     margin-bottom: 60px;
 }
 .logo {
-    width: 170px;
+    width: 190px;
 }
 .media-container {
     display: flex;
+    gap: 6px;
+}
+.media-container img {
+    width: 26px;
 }
 .menu-container {
     display: flex;
@@ -234,12 +281,14 @@ footer {
     gap: 14px;
 }
 .menu-heading {
-    margin-bottom: 8px;
-    font-size: 14px;
-    font-weight: 500;
-    color: rgb(96,96,96);
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    color: rgb(51, 51, 51);
 }
 .menu-container a {
+    font-size: 20px;
     text-decoration: none;
     color: rgb(96,96,96);
 }
@@ -252,6 +301,7 @@ footer {
 }
 .social-wrapper p {
     color: rgb(106,106,106);
+    font-size: 20px;
 }
 .launching-date {
     display: none;
@@ -260,3 +310,4 @@ footer {
     color: rgb(153,153,153);
     font-size: 18px;
 }
+

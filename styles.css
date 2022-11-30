@@ -446,7 +446,8 @@ footer {
 }
 @media only screen and (min-width: 1400px) {
     header {
-        padding: 40px 40px;
+        padding: 40px 0;
+        margin: 0 70px;
     }
     header img {
         width: 280px;
@@ -454,4 +455,60 @@ footer {
     .nav-list li a {
         font-size: 20px;
     }
+    .newlaunch-info .launch-heading {
+        font-size: 100px;
+        max-width: 600px;
+        margin-bottom: 50px;
+    }
+    .launch-span {
+        font-size: 20px;
+    }
+    .newlaunch-container p {
+        font-size: 22px;
+        max-width: 520px;
+        margin-bottom: 50px;
+        line-height: 36px;
+    }
+    .newlaunch-container {
+        padding: 80px 0 ;
+        margin: 0 70px;
+    }
+    .pink-nft {
+        top: 0;
+        height: 700px;
+    }
+    .freenft-container {
+        width: 94%;
+    }
+    .auction-container {
+        width: 93%;
+        margin: 0 auto;
+    }
+    .card-wrapper {
+        justify-content: flex-start;
+    }
+    .auction-container {
+        margin-bottom: 120px;
+    }
+    .launch-container {
+        margin: 120px 0 120px 70px;
+    }
+    .launch-info .launch-heading {
+        font-size: 60px;
+        max-width: 600px;
+        margin-bottom: 40px;
+    }
+    .launch-info p {
+        font-size: 22px;
+        max-width: 520px;
+        margin-bottom: 40px;
+    }
+    .upsell-img {
+        height: 500px;
+        left: 50%;
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    
 }

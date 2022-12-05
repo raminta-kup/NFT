@@ -224,6 +224,7 @@ header {
     display: flex;
     flex-direction: column;
     max-width: 280px;
+    margin-bottom: 16px;
 }
 
 .card-info {
@@ -285,7 +286,7 @@ header {
 }
 
 footer {
-    margin: 0 0 80px 26px;
+    margin: 0 26px 80px 26px;
 }
 
 .social-wrapper {
@@ -550,6 +551,17 @@ footer {
         font-size: 26px;
     }
 
+    .launching-date {
+        display: inline;
+        font-size: 18px;
+        color: rgb(153, 153, 153);
+    }
+
+    .copyright-container {
+        display: flex;
+        justify-content: space-between;
+
+    }
 }
 
 @media only screen and (min-width: 2000px) {
@@ -725,18 +737,8 @@ footer {
         font-size: 28px;
     }
 
-    .copyright-container {
-        display: flex;
-        justify-content: space-between;
-    }
-
+    .copyright,
     .launching-date {
-        display: inline;
-        font-size: 30px;
-        color: rgb(153, 153, 153);
-    }
-
-    .copyright {
         font-size: 30px;
     }
 
